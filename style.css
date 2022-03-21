@@ -11,17 +11,23 @@
 /* Button styling */
 
 a button {
-    padding:30px 120px;
-    border: 2px solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
-    border-radius: 5px;
+    background-color: rgb(4, 43, 4);
+    border: 0px solid #FFFFFF;
+    margin:10px 24px 24px 10px;
+    border-radius: 10px;
     box-sizing: border-box;
     display: inline-block;
+    font-size: 25px;
 
 }
 
 a .main-button {
-    background-color: rgb(16, 59, 16);
+    padding:34px 120px;
+}
+
+a .secondary-button {
+    padding:26px 112px;
+
 }
 
 /* Fade in animation*/
