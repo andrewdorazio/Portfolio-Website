@@ -11,28 +11,28 @@
 /* Heading styling */
 
 h1 {
-    font-size: 50px;
+    font-size: 3em;
 }
 
 /* Button styling */
 
 a button {
     background-color: rgb(4, 43, 4);
-    border: 0px solid #FFFFFF;
-    margin:10px 24px 24px 10px;
-    border-radius: 10px;
+    border: 0em solid #FFFFFF;
+    margin:1.5em 2.5em 2.5em 1.5em;
+    border-radius: 0.25em;
     box-sizing: border-box;
     display: inline-block;
-    font-size: 25px;
+    font-size: 1.5em;
 
 }
 
 a .main-button {
-    padding:34px 120px;
+    padding:1em 3em;
 }
 
 a .secondary-button {
-    padding:26px 112px;
+    padding:0.8em 2.4em;
 
 }
 
@@ -138,19 +138,3 @@ a .secondary-button {
     50% {opacity:1;}
   }
 
-
-/* Fade in and out animation */
-
-.fade-in-out {
-    animation: fadein 3s ease-in-out 0s 1;
-    -moz-animation: fadeinout 3s ease-in-out 0s 1;
-
-    @keyframes fadeinout {
-        0%, 100% { opacity: 0; }
-        50% {opacity:1;}
-      }
-    @-moz-keyframes fadeinout {
-        0%, 100% { opacity: 0; }
-        50% {opacity:1;}
-      }
-}
