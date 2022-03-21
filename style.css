@@ -1,3 +1,5 @@
+/* Overall formatting */
+
 * {
     background-color: black;
     text-align: center;
@@ -5,6 +7,11 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
+
+
+
+/* Fade in animation*/
 
 .fade-in-text {
     animation: fadeIn 3s;
