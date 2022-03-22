@@ -2,7 +2,8 @@
 
 :root {
   --clr-neon: hsl(317, 100%, 54%);
-  --clr-bg: hsl(323 21% 16%);
+  --clr-bg: rgb(17, 11, 15);
+  --clr-blue: hsl(216, 97%, 62%);
 
 }
 
@@ -16,6 +17,11 @@
 
 }
 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
 /* Heading styling */
 
 h1 {
@@ -25,23 +31,31 @@ h1 {
 /* Button styling */
 
 a button {
-    background-color: --clr-neon;
-    border: 0em solid --clr-neon;
-    margin:1.5em 2.5em 2.5em 1.5em;
-    border-radius: 0.25em;
-    box-sizing: border-box;
     display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.2em solid currentColor;
+    margin:1.5em 2.5em 2.5em 1.5em;
+    border-radius: 0.3em;
     font-size: 1.5em;
-
+    text-shadow: 0 0 0.2em rgb(124, 124, 124), 0 0 0.5em currentColor;
+    
 }
 
 a .main-button {
     padding:1em 3em;
+    color: var(--clr-blue);
+    box-shadow: inset 0 0 0.2em rgb(124, 124, 124), 0 0 0.5em currentColor;
 }
 
 a .secondary-button {
     padding:0.8em 2.4em;
+    color: var(--clr-neon);
+    box-shadow: 0 0 0.2em rgb(124, 124, 124), 0 0 0.5em currentColor;
+}
 
+.main-button::before {
+  content: "";
 }
 
 /* Fade in animation*/
