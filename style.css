@@ -78,6 +78,7 @@ a .secondary-button {
 }
 
 a .hidden-button {
+  visibility: hidden;
   margin: 0em 11.5em 0em 10em;
   margin-top: 0%;
   font-size: 1em;
