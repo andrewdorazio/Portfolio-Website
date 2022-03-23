@@ -104,7 +104,6 @@ button::before, button::after {
   transition: opacity 100ms linear;
   margin-left: -6em;
   margin-top: 5em;
-
 }
 
 .main-button:hover,
