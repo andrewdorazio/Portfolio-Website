@@ -4,6 +4,7 @@
   --clr-neon: hsl(317, 100%, 54%);
   --clr-bg: rgb(17, 11, 15);
   --clr-blue: hsl(216, 97%, 62%);
+  --clr-green: hsl(94, 91%, 57%);
 }
 
 @font-face {
@@ -43,6 +44,7 @@ h1 {
 /* Button styling */
 
 a button {
+  margin-top: -40%;
   cursor: pointer;
   text-decoration: none;
   margin: 1.5em 2.5em 2.5em 1.5em;
@@ -64,6 +66,15 @@ a .secondary-button {
   padding:0.8em 2.4em;
   color: var(--clr-neon);
   box-shadow: 0 0 0.2em rgb(124, 124, 124), 0 0 0.5em currentColor;
+}
+
+a .hidden-button {
+  margin: 1.5em 2.5em 0em 1.5em;
+  font-size: 1em;
+  border: 0.2em solid var(--clr-green);
+  padding:0.7em 1.4em;
+  color: var(--clr-green);
+  box-shadow: inset 0 0 0.2em rgb(124, 124, 124), 0 0 0.5em currentColor;
 }
 
 /* Button animation */
