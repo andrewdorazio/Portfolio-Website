@@ -41,10 +41,19 @@ h1 {
   font-size: 3em;
 }
 
+/* Front page formatting */
+
+.front-page {
+  margin-top: 4%;
+}
+
+.hidden-front-page {
+  margin-top: 3%;
+}
+
 /* Button styling */
 
 a button {
-  margin-top: -40%;
   cursor: pointer;
   text-decoration: none;
   margin: 1.5em 2.5em 2.5em 1.5em;
@@ -69,7 +78,8 @@ a .secondary-button {
 }
 
 a .hidden-button {
-  margin: 1.5em 2.5em 0em 1.5em;
+  margin: 0em 11.5em 0em 10em;
+  margin-top: 0%;
   font-size: 1em;
   border: 0.2em solid var(--clr-green);
   padding:0.7em 1.4em;
@@ -96,12 +106,16 @@ button::before, button::after {
   margin-left: -3.5em;
 }
 
-.secondary-button::before {
+.secondary-button::before, .hidden-button::before {
   width: 14em;
   filter: blur(0.50em);
   opacity: 15%;
   background-color: var(--clr-neon);
   margin-left: -4em;
+}
+
+.hidden-button::before {
+  background-color: var(--clr-green);
 }
 
 .main-button::after {
@@ -125,15 +139,23 @@ button::before, button::after {
 }
 
 .secondary-button:hover,
-.secondary-button:focus {
+.secondary-button:focus,
+.hidden-button:hover,
+.hidden-button:focus {
   box-shadow: inset 0 0 0.2em rgb(124, 124, 124), 0 0 2em currentColor;
+}
+
+.hidden-button:hover,
+.hidden-button:focus {
+  text-shadow: 0 0 0.5em rgb(124, 124, 124), 0 0 1.2em currentColor;
 }
 
 .main-button:hover::before {
   opacity: 1;
 }
 
-.secondary-button:hover::before {
+.secondary-button:hover::before,
+.hidden-button:hover::before {
   opacity: 0.65;
 }
 
